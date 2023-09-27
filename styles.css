@@ -1,0 +1,127 @@
+body {
+  background-color: #f2fbf0;
+}
+header >img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+nav {
+  background: cadetblue;
+  height: 48px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
+}
+nav li {
+  display: inline;
+  margin: auto;
+}
+nav a {
+  color: ivory;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 2px 6px;
+}
+a:hover {
+  background-color: ivory;
+  color: black;
+
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+h5 {
+  text-align: center;
+}
+.multi-card-container {
+  margin: auto;
+  padding: 2em 0em;
+}
+.main-card-front img {
+  width: 250px;
+}
+
+.card-text {
+  text-align: justify;
+  margin-top: 1em;
+  font-size: 16px;
+}
+.footer-style {
+  margin-top: 1em;
+  background: cadetblue;
+  width: 100%;
+  padding: 5px 10px;
+}
+.copyright-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer-logo {
+  width: 40px;
+  margin: 1%;
+}
+
+.main-card {
+  background-color: transparent;
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  perspective: 1000px;
+
+  /* padding: 2%; */
+}
+
+.main-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.main-card:hover .main-card-inner {
+  transform: rotateY(180deg);
+}
+
+.main-card-front,
+.main-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.main-card-front {
+  background-color: white;
+  background-image: "./ourStory.jpg";
+  color: black;
+}
+.quote {
+  font-size: 12px;
+  font-weight: 700;
+  font-style: oblique;
+  margin-top: 2em;
+}
+.main-card-back {
+  background-color: white;
+  /* color: white; */
+  transform: rotateY(180deg);
+  padding: 5px 10px 5px 10px;
+}
